@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perjuangan Dakwah Nabi Muhammad SAW - Animasi Edukasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="head">
+      <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <h1>PERJUANGAN DAKWAH NABI MUHAMMAD SAW</h1>
+      <p>Animasi Edukasi Sejarah Islam &middot; Durasi 2 menit</p>
+    </header>
+
+    <section class="player paused" id="player">
+      <div class="stage" id="stage">
+        <div class="chip" id="sceneChip"></div>
+        <div class="scenes" id="scenes"></div>
+
+        <div class="intro" id="intro">
+          <div class="intro-box">
+            <div class="intro-ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+            <h2>PERJUANGAN DAKWAH<br>NABI MUHAMMAD SAW</h2>
+            <p>Animasi Edukasi Sejarah Islam</p>
+            <button id="btnStart" class="btn primary big" type="button">&#9654; Mulai Animasi</button>
+            <small>Aktifkan suara perangkat untuk narasi dan musik latar.</small>
+          </div>
+        </div>
+
+        <div class="toast" id="toast"></div>
+      </div>
+
+      <div class="subtitle" id="subtitle"><span id="subText"></span></div>
+
+      <div class="controls">
+        <div class="bar-wrap">
+          <span id="tNow" class="time">00:00</span>
+          <div class="track" id="track" role="slider" aria-label="Progress animasi">
+            <div class="fill" id="fill"></div>
+            <div class="ticks" id="ticks"></div>
+            <div class="thumb" id="thumb"></div>
+          </div>
+          <span id="tTotal" class="time">02:00</span>
+        </div>
+
+        <div class="btns">
+          <button id="btnPlay" class="btn primary" type="button">&#9654; Play</button>
+          <button id="btnPause" class="btn" type="button">&#10074;&#10074; Pause</button>
+          <button id="btnRestart" class="btn" type="button">&#8635; Restart</button>
+          <button id="btnMusic" class="btn toggle on" type="button">&#127925; Musik</button>
+          <button id="btnVoice" class="btn toggle on" type="button">&#128483; Narasi</button>
+          <button id="btnFull" class="btn" type="button" aria-label="Layar penuh">&#9974;</button>
+        </div>
+
+        <div class="chips" id="chips"></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>Catatan adab: sesuai tuntunan Islam, sosok Nabi Muhammad SAW <strong>tidak digambarkan</strong>. Kehadiran beliau dilambangkan dengan cahaya.</p>
+      <p>Musik latar dibuat langsung oleh kode (sintesis audio), sehingga bebas hak cipta.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
